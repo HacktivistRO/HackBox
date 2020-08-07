@@ -1,5 +1,12 @@
+Hola!
+
+About
+--
+
+HackBox is a BASH script that will transmute your Linux machine into a HackBox!
+
+Following are the things that will be installed in 
 Tools
------
 - DirSearch
 - LinkFinder
 - Knock.py
@@ -18,11 +25,12 @@ Tools
 - QSReplace
 - SudoMy
 - JexBoss
+and..
 - Go Language
 - Must have wordlists (from https://github.com/HacktivistRO/Bug-Bounty-Wordlists)
 - .bash_profile (from https://github.com/HacktivistRO/recon_profile/)
 
-Installing
+For installing
 ----------
     git clone https://github.com/HacktivistRO/HackBox.git
     cd HackBox
@@ -33,4 +41,4 @@ NOTE: Make sure that you run this script as a root user
 
 Inspired by https://github.com/nahamsec/bbht
 
-Happy Hacking!
+                                                        Happy Hacking! 
