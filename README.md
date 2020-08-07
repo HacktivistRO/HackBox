@@ -3,7 +3,7 @@
 About
 --
 
-HackBox is a BASH script that will transmute your Linux machine into a HackBox!
+This is a BASH script that will transmute your Linux machine into a "HackBox"!
 
 Following are the things that will be installed in 
 Tools
