@@ -1,11 +1,8 @@
 ## Namaste! 
 
-About
---
-
 This is a BASH script that will transmute your Linux machine into a "HackBox"!
 
-Following are the things that will be installed in 
+Following are the things that will be installed by the script
 Tools
 - DirSearch
 - LinkFinder
@@ -42,9 +39,9 @@ For installing
 NOTE: Make sure that you run this script as a root user
 
 Inspired by [@Nahamsec/BBHT](https://github.com/nahamsec/bbht)
+
 <p align="center">
-
+<br><br>
 ## Happy Hacking!:heart:
-
 </p>
     
