@@ -39,6 +39,6 @@ For installing
 
 NOTE: Make sure that you run this script as a root user
 
-Inspired by https://github.com/nahamsec/bbht
+Inspired by [NahamsecBBHT](https://github.com/nahamsec/bbht)
 
-                                                        Happy Hacking! 
+#Happy Hacking! :heart: 
