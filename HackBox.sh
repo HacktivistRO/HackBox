@@ -173,7 +173,7 @@ echo "Installing SudoMy"
 git clone https://github.com/Screetsec/Sudomy
 echo "SudoMy installed successfully"
 
-#Installing JexBos
+#Installing JexBoss
 echo "Installing JexBoss"
 cd ~/tools
 git clone https://github.com/joaomatosf/jexboss
