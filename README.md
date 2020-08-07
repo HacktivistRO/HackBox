@@ -41,8 +41,7 @@ NOTE: Make sure that you run this script as a root user
 Inspired by [@Nahamsec/BBHT](https://github.com/nahamsec/bbht)
 
 <p align="center">
-    <font size=25>
-<br>
+    <font size=99>
  Happy Hacking!:heart:
      </font>
 </p>
