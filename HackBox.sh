@@ -29,6 +29,7 @@ git clone https://github.com/HacktivistRO/recon_profile/
 cd recon_profile
 cat .bash_profile >> ~/.bash_profile
 source ~/.bash_profile
+echo "source ~/.bash_profile" >> /root/.bashrc
 echo "done"
 
 
