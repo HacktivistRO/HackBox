@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "Make sure that you run this script as a root user"
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -24,6 +23,7 @@ sudo apt-get install -y xargs
 mkdir ~/tools
 cd ~/tools
 
+#installing .bash_profile
 echo "installing bash_profile aliases from Hacktivist RO's recon_profile"
 git clone https://github.com/HacktivistRO/recon_profile/
 cd recon_profile
@@ -32,7 +32,7 @@ source ~/.bash_profile
 echo "done"
 
 
-#install go
+#installing go
 if [[ -z "$GOPATH" ]];then
 echo "It looks like go is not installed, would you like to install it now"
 PS3="Please select an option : "
@@ -64,18 +64,18 @@ select choice in "${choices[@]}"; do
 done
 fi
 
-
 #Installing AWSCLI!
 echo "Installing AWSCLI"
 apt install -y awscli
 echo "AWSCLI installed successfully!"
 echo "Don't forget to set up AWS credentials!"
 
-#install chromium
+#installing chromium
 echo "Installing Chromium"
 sudo apt -y install chromium
 echo "Chromium installed successfully"
 
+#installing LinkFinder
 echo "Installing LinkFinder"
 git clone https://github.com/GerbenJavado/LinkFinder
 cd LinkFinder*
@@ -84,6 +84,7 @@ pip3 install -r requirements.txt
 cd ~/tools/
 echo "LinkFinder installed successfully"
 
+#installing Sublist3r
 echo "Installing Sublist3r"
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
@@ -92,51 +93,59 @@ pip install -r requirements.txt
 cd ~/tools/
 echo "Sublist3er installed successfully"
 
-echo "Installing teh_s3_bucketeers"
+#installing The_S3_Bucketeers
+echo "Installing Teh_S3_Bucketeers"
 git clone https://github.com/tomdev/teh_s3_bucketeers.git
 cd ~/tools/
-echo "teh_s3_bucketeers installed successfully"
+echo "Teh_S3_Bucketeers installed successfully"
 
-echo "Installing wpscan"
+#installing WPScan
+echo "Installing WPScan"
 git clone https://github.com/wpscanteam/wpscan.git
 cd wpscan*
 sudo gem install bundler && bundle install --without test
 cd ~/tools/
 echo "WPScan installed successfully"
 
-echo "Installing dirsearch"
+#installing DirSearch
+echo "Installing DirSearch"
 git clone https://github.com/maurosoria/dirsearch.git
 cd ~/tools/
 echo "DirSearch installed successfully"
 
-echo "Installing lazys3"
+#installing LazyS3
+echo "Installing LazyS3"
 git clone https://github.com/nahamsec/lazys3.git
 cd ~/tools/
 echo "LazyS3 installed successfully"
 
-echo "Installing sqlmap"
+#installing SQLMap
+echo "Installing SQLMap"
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
 cd ~/tools/
 echo "SQLMap installed successfully"
 
-echo "Installing knock.py"
+#installing Knock
+echo "Installing Knock"
 git clone https://github.com/guelfoweb/knock.git
 cd ~/tools/
 echo "Installed Knock.py"
 echo "Make sure you setup VirusTotal API key"
 
+#installing NMap
 echo "Installing NMap"
 sudo apt-get install -y nmap
 echo "NMap installed successfully"
 
-echo "Installing httprobe"
+#installing HTTProve
+echo "Installing HTTProbe"
 go get -u github.com/tomnomnom/httprobe 
 echo "HTTProbe installed successfully"
 
+#Download must-have wordlists
 echo "Downloading Bug Bounty Wordlists from Hacktivist RO's GitHub repository"
 cd ~/tools/
 git clone https://github.com/HacktivistRO/Bug-Bounty-Wordlists
-cd ~/tools/
 echo "Bug-Bounty-Wordlists downloaded successfully"
 
 #Installing Assetfinder
@@ -163,6 +172,7 @@ echo "QSReplace installed successfully"
 echo "Installing SudoMy"
 git clone https://github.com/Screetsec/Sudomy
 echo "SudoMy installed successfully"
+
 #Installing JexBos
 echo "Installing JexBoss"
 cd ~/tools
@@ -173,4 +183,4 @@ pip install -r requires.txt
 echo "JexBoss installed successfully"
 
 echo "Your hacking machine is now ready. All the best!"
-
+echo " Have a happy and safe hacking journey!"
