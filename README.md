@@ -1,4 +1,4 @@
-Hola!
+## Namaste! namaste
 
 About
 --
@@ -25,7 +25,9 @@ Tools
 - QSReplace
 - SudoMy
 - JexBoss
+
 and..
+
 - Go Language
 - Must have wordlists (from https://github.com/HacktivistRO/Bug-Bounty-Wordlists)
 - .bash_profile (from https://github.com/HacktivistRO/recon_profile/)
@@ -41,4 +43,4 @@ NOTE: Make sure that you run this script as a root user
 
 Inspired by [@Nahamsec/BBHT](https://github.com/nahamsec/bbht)
 
-# Happy Hacking!:heart: 
+## Happy Hacking!:heart: 
