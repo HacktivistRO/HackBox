@@ -90,7 +90,7 @@ echo "Installing Sublist3r"
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
 echo "Setting up Sublist3r by installing its requirements"
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 cd ~/tools/
 echo "Sublist3er installed successfully"
 
