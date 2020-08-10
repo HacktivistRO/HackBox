@@ -42,5 +42,4 @@ Inspired by [@Nahamsec/BBHT](https://github.com/nahamsec/bbht)
 
 <p align="center">
 Happy Hacking!:heart:
-</p>
-    
+</p> 
