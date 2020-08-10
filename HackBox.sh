@@ -189,4 +189,4 @@ pip install -r requires.txt
 echo "JexBoss installed successfully"
 
 echo "Your "HackBox" is now ready. All the best!"
-echo "Have a happy and safe hacking journey!"
+echo "Have a happy and safe hacking journey ahead!"
