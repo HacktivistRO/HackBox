@@ -1,8 +1,13 @@
 #!/bin/bash
 
+# Ensure we are being ran as root
+if [ $(id -u) -ne 0 ]; then
+	echo "This script must be ran as root"
+	exit 1
+fi
+
 sudo apt-get -y update
 sudo apt-get -y upgrade
-
 
 sudo apt-get install -y libcurl4-openssl-dev
 sudo apt-get install -y libssl-dev
