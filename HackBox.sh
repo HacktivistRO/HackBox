@@ -53,10 +53,10 @@ echo "done"
 
 
 #installing go
-if [[ -z "$GOPATH" ]]; then
+if [[ -z "$GOPATH" ]]; 
+then
 echo "It looks like go is not installed, installing it now"
 apt -y install golang-go
-done
 fi
 
 #Installing AWSCLI!
