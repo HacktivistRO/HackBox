@@ -37,8 +37,6 @@ echo "done"
 
 
 #installing go
-if [[ -z "$GOPATH" ]]; 
-then
 echo "Installing Golang"
 wget https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz
 sudo tar -xvf go1.13.4.linux-amd64.tar.gz
@@ -50,9 +48,6 @@ echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile
 echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile			
 echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile	
 source ~/.bash_profile
-sleep 1
-break
-fi
 
 #Installing AWSCLI!
 echo "Installing AWSCLI"
