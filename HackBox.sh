@@ -5,24 +5,8 @@ if [ $(id -u) -ne 0 ]; then
 	echo "This script must be ran as root"
 	exit 1
 fi
-PS3="Would you like to update your system? : "
-choices=("yes" "no")
-select choice in "${choices[@]}"; do
-        case $choice in
-                yes)
 
-					sudo apt-get -y update
-					sudo apt-get -y upgrade
-					sleep 1
-					break
-					;;
-		no)
-					echo "Not updating your system..now installing neccessary tools"
-					break
-					;;
-	esac
-
-
+sudo apt-get -y update
 sudo apt-get install -y libcurl4-openssl-dev
 sudo apt-get install -y libssl-dev
 sudo apt-get install -y jq
