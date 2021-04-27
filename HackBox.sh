@@ -12,7 +12,7 @@ select choice in "${choices[@]}"; do
                 yes)
 
 					sudo apt-get -y update
-s					sudo apt-get -y upgrade
+					sudo apt-get -y upgrade
 					sleep 1
 					break
 					;;
@@ -53,7 +53,7 @@ echo "done"
 
 
 #installing go
-if [[ -z "$GOPATH" ]];then
+if [[ -z "$GOPATH" ]]; then
 echo "It looks like go is not installed, installing it now"
 apt -y install golang-go
 done
