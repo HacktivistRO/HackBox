@@ -57,11 +57,6 @@ apt install -y awscli
 echo "AWSCLI installed successfully!"
 echo "Don't forget to set up AWS credentials!"
 
-#installing chromium
-echo "Installing Chromium"
-sudo apt -y install chromium
-echo "Chromium installed successfully"
-
 #installing LinkFinder
 echo "Installing LinkFinder"
 git clone https://github.com/GerbenJavado/LinkFinder
