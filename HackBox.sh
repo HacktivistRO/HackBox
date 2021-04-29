@@ -16,7 +16,6 @@ sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev
 sudo apt-get install -y python-setuptools
 sudo apt-get install -y libldns-dev
 sudo apt-get install -y python3-pip
-sudo apt-get install -y python-pip
 sudo apt-get install -y python-dnspython
 sudo apt-get install -y git
 sudo apt-get install -y rename
@@ -35,6 +34,11 @@ source /root/.bash_profile
 echo "source /root/.bash_profile" >> /root/.bashrc
 echo "done"
 
+#Installing python-pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+rm get-pip.py
+echo "python-pip installed"
 
 #installing go
 echo "Installing Golang"
@@ -111,6 +115,8 @@ echo "SQLMap installed successfully"
 #installing Knock
 echo "Installing Knock"
 git clone https://github.com/guelfoweb/knock.git
+cd knock
+python3 setup.py install
 cd ~/tools/
 echo "Installed Knock.py"
 echo "Make sure you setup VirusTotal API key"
