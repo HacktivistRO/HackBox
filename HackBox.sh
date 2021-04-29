@@ -30,24 +30,22 @@ cd ~/tools
 echo "installing bash_profile aliases from Hacktivist RO's recon_profile"
 git clone https://github.com/HacktivistRO/recon_profile/
 cd recon_profile
-cat .bash_profile >> ~/.bash_profile
-source ~/.bash_profile
-echo "source ~/.bash_profile" >> /root/.bashrc
+cat .bash_profile >> /root/.bash_profile
+source /root/.bash_profile
+echo "source /root/.bash_profile" >> /root/.bashrc
 echo "done"
 
 
 #installing go
 echo "Installing Golang"
-wget https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz
-sudo tar -xvf go1.13.4.linux-amd64.tar.gz
-sudo mv go /usr/local
+apt install golang-go
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile
-echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile			
-echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile	
-source ~/.bash_profile
+echo 'export GOROOT=/usr/local/go' >> /root/.bash_profile
+echo 'export GOPATH=$HOME/go'	>> /root/.bash_profile		
+echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> /root/.bash_profile	
+source /root/.bash_profile
 
 #Installing AWSCLI!
 echo "Installing AWSCLI"
