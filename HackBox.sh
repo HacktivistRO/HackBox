@@ -139,7 +139,7 @@ echo "AssetFinder installed successfully"
 
 #installing SubFinder
 echo "Installing SubFinder"
-GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/cmd/subfinder
+GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
 echo "Subfinder installed successfully"
 
 #Installing GAU
