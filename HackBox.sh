@@ -72,6 +72,7 @@ git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r*
 echo "Setting up Sublist3r by installing its requirements"
 pip3 install -r requirements.txt
+python3 setup.py install
 cd ~/tools/
 echo "Sublist3er installed successfully"
 
