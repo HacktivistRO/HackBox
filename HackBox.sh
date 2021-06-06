@@ -35,7 +35,7 @@ echo "source /root/.bash_profile" >> /root/.bashrc
 echo "done"
 
 #Installing python-pip
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
 python get-pip.py
 rm get-pip.py
 echo "python-pip installed"
@@ -49,7 +49,7 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 echo 'export GOROOT=/usr/local/go' >> /root/.bash_profile
 echo 'export GOPATH=$HOME/go'	>> /root/.bash_profile		
 echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> /root/.bash_profile	
-source /root/.bash_profile
+source /root/.
 
 #Installing AWSCLI!
 echo "Installing AWSCLI"
