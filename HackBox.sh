@@ -124,7 +124,7 @@ echo "Installing NMap"
 sudo apt-get install -y nmap
 echo "NMap installed successfully"
 
-#installing HTTProbe
+#installing HTTProve
 echo "Installing HTTProbe"
 go install github.com/tomnomnom/httprobe@latest
 echo "HTTProbe installed successfully"
@@ -175,5 +175,12 @@ echo "Setting up JexBoss by installing its requirements"
 pip install -r requires.txt
 echo "JexBoss installed successfully"
 cd ..
+
+#Installing WhatWeb"
+cd ~/tools
+echo "Installing WhatWeb"
+git clone https://github.com/urbanadventurer/WhatWeb.git
+echo "WhatWeb installed successfully."
+
 echo "Your "HackBox" is now ready. All the best!"
 echo "Have a happy and safe hacking journey ahead!"
