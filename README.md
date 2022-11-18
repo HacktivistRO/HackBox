@@ -39,6 +39,7 @@ For installing
     sudo ./HackBox.sh
 
 NOTE 1: Make sure that you run this script as a root user
+
 NOTE 2: BurpSuite has not been added to the script due to a few technical restrictions. It can be downloaded manually from https://portswigger.net/burp/releases.
 
 Inspired by [@Nahamsec/BBHT](https://github.com/nahamsec/bbht)
