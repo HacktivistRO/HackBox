@@ -243,7 +243,16 @@ echo "Installing Halberd"
 git clone https://github.com/jmbr/halberd
 cd halberd
 python setup.py install
+cd ..
 echo "Halberd installed successfully."
+sleep 3
+clear
+
+#Installing Cero
+cd ~/tools
+echo "Installing Cero"
+go install github.com/glebarez/cero@latest
+echo "Cero installed successfully."
 sleep 3
 clear
 
@@ -252,6 +261,7 @@ echo "Removing obsolete and unneccessary packages"
 apt -y autoremove
 sleep 3
 clear
+
 echo "Your "HackBox" is now ready. All the best!"
 echo "For a list of all tools installed, visit here: https://github.com/HacktivistRO/HackBox"
 echo "Have a happy and safe hacking journey ahead!"
