@@ -124,7 +124,7 @@ echo "Installing NMap"
 sudo apt-get install -y nmap
 echo "NMap installed successfully"
 
-#installing HTTProve
+#installing HTTProbe
 echo "Installing HTTProbe"
 go install github.com/tomnomnom/httprobe@latest
 echo "HTTProbe installed successfully"
