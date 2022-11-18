@@ -24,6 +24,7 @@ Tools
 - JexBoss
 - WhatWeb
 - Halberd (Load Balancer Detector)
+- Cero
 
 and..
 
