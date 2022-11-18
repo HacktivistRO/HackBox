@@ -180,7 +180,22 @@ cd ..
 cd ~/tools
 echo "Installing WhatWeb"
 git clone https://github.com/urbanadventurer/WhatWeb.git
+cd..
 echo "WhatWeb installed successfully."
 
+#Installing Halberd (Load Balancer Detector)
+cd ~/tools
+echo "Installing Halberd"
+git clone https://github.com/jmbr/halberd
+cd halberd
+python setup.py install
+echo "Halberd installed successfully."
+
+# Removing obsolete and unneccessary packages
+echo "Removing obsolete and unneccessary packages"
+apt -y autoremove
+echo "Done"
+clear
 echo "Your "HackBox" is now ready. All the best!"
+echo "For a list of all tools installed, visit here: https://github.com/HacktivistRO/HackBox"
 echo "Have a happy and safe hacking journey ahead!"
