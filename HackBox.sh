@@ -42,14 +42,16 @@ echo "python-pip installed"
 
 #installing go
 echo "Installing Golang"
-apt install golang-go
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-echo 'export GOROOT=/usr/local/go' >> /root/.bash_profile
-echo 'export GOPATH=$HOME/go'	>> /root/.bash_profile		
-echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> /root/.bash_profile	
-source /root/.
+mkdir go-lang
+cd go-lang
+wget https://go.dev/dl/go1.19.3.linux-amd64.tar.gz
+rm -rf /usr/local/go
+tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+echo 'export PATH=$PATH:/usr/local/go/bin' >> /root/.bash_profile
+source /root/.bash_profile
+cd ..
+rm -rf go-lang
 
 #Installing AWSCLI!
 echo "Installing AWSCLI"
@@ -124,7 +126,7 @@ echo "NMap installed successfully"
 
 #installing HTTProve
 echo "Installing HTTProbe"
-go get -u github.com/tomnomnom/httprobe 
+go install github.com/tomnomnom/httprobe@latest
 echo "HTTProbe installed successfully"
 
 #Download must-have wordlists
@@ -134,38 +136,44 @@ git clone https://github.com/HacktivistRO/Bug-Bounty-Wordlists
 echo "Bug-Bounty-Wordlists downloaded successfully"
 
 #Installing Assetfinder
-echo "Installing assetfinder"
-go get -u github.com/tomnomnom/assetfinder
+echo "Installing AssetFinder"
+mkdir af
+cd af
+wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz
+tar -C /usr/local -xzf assetfinder-linux-amd64-0.1.1.tgz
+cd ..
+rm -rf af
 echo "AssetFinder installed successfully"
 
 #installing SubFinder
 echo "Installing SubFinder"
-GO111MODULE=on go get -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 echo "Subfinder installed successfully"
 
 #Installing GAU
 echo "Installing Get All URLs"
-GO111MODULE=on go get -u -v github.com/lc/gau
+go install github.com/lc/gau/v2/cmd/gau@latest
 echo "GAU installed successfully"
 
 #installing QSReplace
 echo "Installing QSReplace"
-go get -u github.com/tomnomnom/qsreplace
+go install github.com/tomnomnom/qsreplace@latest
 echo "QSReplace installed successfully"
 
 #installing SudoMy
 echo "Installing SudoMy"
+cd ~/tools
 git clone https://github.com/Screetsec/Sudomy
 echo "SudoMy installed successfully"
 
+
 #Installing JexBoss
 echo "Installing JexBoss"
-cd ~/tools
 git clone https://github.com/joaomatosf/jexboss
 cd jexboss
 echo "Setting up JexBoss by installing its requirements"
 pip install -r requires.txt
 echo "JexBoss installed successfully"
-
+cd ..
 echo "Your "HackBox" is now ready. All the best!"
 echo "Have a happy and safe hacking journey ahead!"
