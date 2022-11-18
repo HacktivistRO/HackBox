@@ -23,6 +23,7 @@ Tools
 - SudoMy
 - JexBoss
 - WhatWeb
+- Halberd (Load Balancer Detector)
 
 and..
 
