@@ -22,6 +22,7 @@ Tools
 - QSReplace
 - SudoMy
 - JexBoss
+- WhatWeb
 
 and..
 
