@@ -233,7 +233,7 @@ clear
 cd ~/tools
 echo "Installing WhatWeb"
 git clone https://github.com/urbanadventurer/WhatWeb.git
-cd..
+cd ..
 echo "WhatWeb installed successfully."
 sleep 3
 clear
