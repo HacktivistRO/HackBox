@@ -257,6 +257,14 @@ echo "Cero installed successfully."
 sleep 3
 clear
 
+#Installing CSPRecon
+cd ~/tools
+echo "Installing CSPRecon"
+go install github.com/glebarez/cero@latest
+echo "CSPRecon installed successfully."
+sleep 3
+clear
+
 # Removing obsolete and unneccessary packages
 echo "Removing obsolete and unneccessary packages"
 apt -y autoremove
