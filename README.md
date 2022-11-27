@@ -25,12 +25,13 @@ Tools
 - WhatWeb
 - Halberd (Load Balancer Detector)
 - Cero
+- CSPRecon
 
 and..
 
 - Go Language
 - Must have wordlists (from https://github.com/HacktivistRO/Bug-Bounty-Wordlists)
-- .bash_profile (from https://github.com/HacktivistRO/recon_profile/)
+- My .bash_profile for recon automation (from https://github.com/HacktivistRO/recon_profile/)
 
 For installing
 ----------
