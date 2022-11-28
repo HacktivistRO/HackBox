@@ -26,6 +26,7 @@ Tools
 - Halberd (Load Balancer Detector)
 - Cero
 - CSPRecon
+- IdentYwaf
 
 and..
 
