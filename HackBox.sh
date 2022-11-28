@@ -265,6 +265,14 @@ echo "CSPRecon installed successfully."
 sleep 3
 clear
 
+#Installing identYwaf
+cd ~/tools
+echo "Installing identYwaf"
+git clone --depth 1 https://github.com/stamparm/identYwaf.git
+echo "identYwaf installed successfully."
+sleep 3
+clear
+
 # Removing obsolete and unneccessary packages
 echo "Removing obsolete and unneccessary packages"
 apt -y autoremove
