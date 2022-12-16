@@ -148,6 +148,21 @@ echo "SQLMap installed successfully"
 sleep 3
 clear
 
+#installing AMass
+echo "Installing Amass"
+cd ~/tools/
+mkdir Amass
+cd Amass
+wget https://github.com/OWASP/Amass/releases/download/v3.21.2/amass_linux_amd64.zip
+unzip amass_linux_amd64.zip
+cd amass_linux_amd64.zip
+mv amass /usr/bin
+cd ~/tools/
+rm -rf amass
+echo "Amass installed successfully"
+sleep 3
+clear
+
 #installing Knock
 echo "Installing Knock"
 git clone https://github.com/guelfoweb/knock.git
