@@ -8,25 +8,30 @@ fi
 
 echo "Installing updates and neccessry packages now."
 
-sudo apt-get -y update
-sudo apt-get install -y libcurl4-openssl-dev
+sudo apt -y update
+sudo apt install -y libcurl4-openssl-dev
 sudo apt install -y curl
-sudo apt-get install -y libssl-dev
-sudo apt-get install -y jq
-sudo apt-get install -y ruby-full
-sudo apt-get install -y libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
-sudo apt-get install -y build-essential libssl-dev libffi-dev python-dev
-sudo apt-get install -y python-setuptools
-sudo apt-get install -y libldns-dev
-sudo apt-get install -y python3-pip
-sudo apt-get install -y python-dnspython
-sudo apt-get install -y git
-sudo apt-get install -y rename
-sudo apt-get install -y xargs
+sudo apt install -y libssl-dev
+sudo apt install -y jq
+sudo apt install -y ruby-full
+sudo apt install -y libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
+sudo apt install -y build-essential libssl-dev libffi-dev python-dev
+sudo apt install -y python-setuptools
+sudo apt install -y libldns-dev
+sudo apt install -y python-pip
+sudo apt install -y gem
+sudo apt install -y ruby
+sudo apt install -y ruby-dev
+sudo apt install -y python3-pip
+sudo apt install -y python-dnspython
+sudo apt install -y git
+sudo apt install -y rename
+sudo apt install -y xargs
+sudo apt install -y docker.io
 
 echo "updating and package installing done"
 sleep 3
-clear
+clearhttps://github.com/HacktivistRO/HostileSubBruteForcer
 
 #making tools directory
 mkdir ~/tools
@@ -39,15 +44,8 @@ cd recon_profile
 cat .bash_profile >> /root/.bash_profile
 source /root/.bash_profile
 echo "source /root/.bash_profile" >> /root/.bashrc
+cd ~/tools/
 echo "done"
-sleep 3
-clear
-
-#Installing python-pip
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-python get-pip.py
-rm get-pip.py
-echo "python-pip installed"
 sleep 3
 clear
 
@@ -61,7 +59,7 @@ tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /root/.bash_profile
 source /root/.bash_profile
-cd ..
+cd ~/tools
 rm -rf go-lang
 sleep 1
 clear
@@ -90,6 +88,7 @@ cd ~/tools/
 echo "LinkFinder installed successfully"
 sleep 3
 clear
+
 #installing Sublist3r
 echo "Installing Sublist3r"
 git clone https://github.com/aboul3la/Sublist3r.git
@@ -111,20 +110,25 @@ sleep 3
 clear
 
 #installing WPScan
-echo "Installing WPScan"
-git clone https://github.com/wpscanteam/wpscan.git
-cd wpscan*
-sudo gem install bundler && bundle install --without test
-cd ~/tools/
+gem install wpscan
 echo "WPScan installed successfully"
 sleep 3
 clear
 
 #installing DirSearch
-echo "Installing DirSearch"
+echo "Installing DirSearch and its requirements"
 git clone https://github.com/maurosoria/dirsearch.git
+cd dirsearch
+pip3 install -r requirements.txt
 cd ~/tools/
 echo "DirSearch installed successfully"
+sleep 3
+clear
+
+#installing HostileSubBruteForcer
+echo "Installing HostileSubBruteForcer"
+git clone https://github.com/HacktivistRO/HostileSubBruteForcer
+echo "HostileSubBruteForcer installed successfully"
 sleep 3
 clear
 
@@ -162,9 +166,15 @@ echo "NMap installed successfully"
 sleep 3
 clear
 
-#installing HTTProve
+#installing HTTProbe
 echo "Installing HTTProbe"
-go install github.com/tomnomnom/httprobe@latest
+mkdir HTTProbe
+cd HTTProbe
+wget https://github.com/tomnomnom/httprobe/releases/download/v0.2/httprobe-linux-amd64-0.2.tgz
+tar -xvf httprobe-linux-amd64-0.2.tgz
+mv ./httprobe /usr/bin/
+cd ..
+rm -rf HTTProbe
 echo "HTTProbe installed successfully"
 sleep 3
 clear
@@ -182,8 +192,8 @@ echo "Installing AssetFinder"
 mkdir af
 cd af
 wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz
-tar -C /usr/local -xzf assetfinder-linux-amd64-0.1.1.tgz
-cd ..
+tar -C /usr/bin -xzf assetfinder-linux-amd64-0.1.1.tgz
+cd ~/tools
 rm -rf af
 echo "AssetFinder installed successfully"
 sleep 3
@@ -191,14 +201,28 @@ clear
 
 #installing SubFinder
 echo "Installing SubFinder"
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+cd ~/tools
+mkdir subfinder
+cd subfinder
+wget https://github.com/projectdiscovery/subfinder/releases/download/v2.5.5/subfinder_2.5.5_linux_amd64.zip
+unzip subfinder_2.5.5_linux_amd64.zip
+mv subfinder /usr/bin
+cd ..
+rm -rf subfinder/
 echo "Subfinder installed successfully"
 sleep 3
 clear
 
 #Installing GAU
 echo "Installing Get All URLs"
-go install github.com/lc/gau/v2/cmd/gau@latest
+cd ~/tools
+mkdir gau
+cd gau
+wget https://github.com/lc/gau/releases/download/v2.1.2/gau_2.1.2_linux_amd64.tar.gz
+tar xvf gau_2.1.2_linux_amd64.tar.gz
+mv ./gau /usr/bin/
+cd ..
+rm gau
 echo "GAU installed successfully"
 sleep 3
 clear
@@ -233,7 +257,7 @@ clear
 cd ~/tools
 echo "Installing WhatWeb"
 git clone https://github.com/urbanadventurer/WhatWeb.git
-cd ..
+cd ~/tools/
 echo "WhatWeb installed successfully."
 sleep 3
 clear
@@ -244,7 +268,7 @@ echo "Installing Halberd"
 git clone https://github.com/jmbr/halberd
 cd halberd
 python setup.py install
-cd ..
+cd ~/tools/
 echo "Halberd installed successfully."
 sleep 3
 clear
@@ -252,7 +276,13 @@ clear
 #Installing Cero
 cd ~/tools
 echo "Installing Cero"
-go install github.com/glebarez/cero@latest
+mkdir cero
+cd cero
+wget https://github.com/glebarez/cero/releases/download/v1.3.0/cero-linux-amd64
+mv cero-linux-amd64 cero
+mv cero /usr/bin
+cd ..
+rm -rf cero
 echo "Cero installed successfully."
 sleep 3
 clear
@@ -260,7 +290,16 @@ clear
 #Installing CSPRecon
 cd ~/tools
 echo "Installing CSPRecon"
-go install github.com/glebarez/cero@latest
+cd ~/tools/
+mkdir csprecon
+cd csprecon
+wget https://github.com/edoardottt/csprecon/archive/refs/tags/v0.0.4.zip 
+unzip v0.0.4.zip
+cd csprecon/cmd
+go build
+mv ./csprecon /usr/bin
+cd ~/tools/
+rm -rf csprecon
 echo "CSPRecon installed successfully."
 sleep 3
 clear
