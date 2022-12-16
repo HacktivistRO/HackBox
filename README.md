@@ -28,6 +28,7 @@ Tools
 - Cero
 - CSPRecon
 - IdentYwaf
+- Amass
 
 and..
 
