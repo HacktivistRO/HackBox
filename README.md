@@ -6,6 +6,7 @@ Following are the things that will be installed by the script
 Tools
 - DirSearch
 - LinkFinder
+- Docker
 - Knock.py
 - LazyS3
 - SQLMap
