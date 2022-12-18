@@ -324,7 +324,7 @@ mkdir csprecon
 cd csprecon
 wget https://github.com/edoardottt/csprecon/archive/refs/tags/v0.0.4.zip 
 unzip v0.0.4.zip
-cd csprecon-0.0.4/cmd
+cd csprecon-0.0.4/cmd/csprecon
 go build
 chmod +x ./csprecon
 mv ./csprecon /usr/bin
