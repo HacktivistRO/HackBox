@@ -236,7 +236,7 @@ cd gau
 wget https://github.com/lc/gau/releases/download/v2.1.2/gau_2.1.2_linux_amd64.tar.gz
 tar xvf gau_2.1.2_linux_amd64.tar.gz
 mv ./gau /usr/bin/
-cd ..
+cd ~/tools
 rm gau
 echo "GAU installed successfully"
 sleep 3
@@ -244,6 +244,15 @@ clear
 
 #installing QSReplace
 echo "Installing QSReplace"
+cd ~/tools
+mkdir qsr
+cd qsr
+wget https://github.com/tomnomnom/qsreplace/releases/download/v0.0.3/qsreplace-linux-amd64-0.0.3.tgz
+tar xvf qsreplace-linux-amd64-0.0.3.tgz
+chmod +x qsreplace
+mv ./qsreplace /usr/bin
+cd ~/tools
+rm -rf qsr
 go install github.com/tomnomnom/qsreplace@latest
 echo "QSReplace installed successfully"
 sleep 3
@@ -272,7 +281,11 @@ clear
 cd ~/tools
 echo "Installing WhatWeb"
 git clone https://github.com/urbanadventurer/WhatWeb.git
-cd ~/tools/
+cd WhatWeb
+chmod +x ./whatweb
+mv whatweb /usr/bin
+cd ~/tools
+rm -rf WhatWeb
 echo "WhatWeb installed successfully."
 sleep 3
 clear
@@ -295,6 +308,7 @@ mkdir cero
 cd cero
 wget https://github.com/glebarez/cero/releases/download/v1.3.0/cero-linux-amd64
 mv cero-linux-amd64 cero
+chmod +x ./cero
 mv cero /usr/bin
 cd ..
 rm -rf cero
@@ -312,6 +326,7 @@ wget https://github.com/edoardottt/csprecon/archive/refs/tags/v0.0.4.zip
 unzip v0.0.4.zip
 cd csprecon/cmd
 go build
+chmod +x ./csprecon
 mv ./csprecon /usr/bin
 cd ~/tools/
 rm -rf csprecon
@@ -328,6 +343,7 @@ wget https://github.com/Josue87/gotator/archive/refs/tags/v1.1.zip
 unzip v1.1.zip
 cd gotator-1.1/
 go build
+chmod +x ./gotator
 mv ./gotator /usr/bin
 echo "Gotator installed successfully."
 cd ~/tools
