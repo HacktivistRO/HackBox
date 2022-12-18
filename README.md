@@ -29,6 +29,7 @@ Tools
 - CSPRecon
 - IdentYwaf
 - Amass
+- Gotator
 
 and..
 
