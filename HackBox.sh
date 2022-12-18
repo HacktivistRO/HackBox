@@ -319,6 +319,22 @@ echo "CSPRecon installed successfully."
 sleep 3
 clear
 
+#Installing Gotator
+cd ~/tools
+echo "Installing Gotator now"
+mkdir gotator
+cd gotator
+wget https://github.com/Josue87/gotator/archive/refs/tags/v1.1.zip
+unzip v1.1.zip
+cd gotator-1.1/
+go build
+mv ./gotator /usr/bin
+echo "Gotator installed successfully."
+cd ~/tools
+rm -rf gotator
+sleep 3
+clear
+
 #Installing identYwaf
 cd ~/tools
 echo "Installing identYwaf"
