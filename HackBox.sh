@@ -204,13 +204,12 @@ clear
 
 #Installing Assetfinder
 echo "Installing AssetFinder"
-mkdir af
-cd af
 wget https://github.com/tomnomnom/assetfinder/releases/download/v0.1.1/assetfinder-linux-amd64-0.1.1.tgz
-tar -C /usr/bin -xzf assetfinder-linux-amd64-0.1.1.tgz
-cd ~/tools
-rm -rf af
-echo "AssetFinder installed successfully"
+mv assetfinder-linux-amd64-0.1.1.tgz assetfinder.tgz
+tar -zxf assetfinder.tgz
+rm assetfinder.tgz
+chmod +x assetfinder
+sudo mv assetfinder /usr/bin
 sleep 3
 clear
 
