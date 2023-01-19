@@ -8,6 +8,7 @@ Tools
 - LinkFinder
 - Docker
 - Knock.py
+- SubSleuth
 - LazyS3
 - SQLMap
 - Sublist3r
