@@ -132,6 +132,17 @@ echo "HostileSubBruteForcer installed successfully"
 sleep 3
 clear
 
+#installing SubSlueth
+cd ~/tools
+echo "Installing SubSleuth"
+git clone https://github.com/HacktivistRO/SubSleuth
+cd SubSleuth
+echo "Setting up SubSleuth now"
+bash setup.sh
+echo "Subsleuth installed successfully"
+sleep 3
+clear
+
 #installing LazyS3
 echo "Installing LazyS3"
 git clone https://github.com/nahamsec/lazys3.git
