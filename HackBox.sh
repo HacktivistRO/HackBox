@@ -31,7 +31,7 @@ sudo apt install -y docker.io
 
 echo "updating and package installing done"
 sleep 3
-clearhttps://github.com/HacktivistRO/HostileSubBruteForcer
+clear
 
 #making tools directory
 mkdir ~/tools
@@ -45,12 +45,12 @@ cat .bash_profile >> /root/.bash_profile
 source /root/.bash_profile
 echo "source /root/.bash_profile" >> /root/.bashrc
 cd ~/tools/
-echo "done"
+echo ".bash_profile ready"
 sleep 3
 clear
 
 #installing go
-echo "Installing Golang"
+echo "Installing Go Language now!"
 mkdir go-lang
 cd go-lang
 wget https://go.dev/dl/go1.19.3.linux-amd64.tar.gz
