@@ -1,4 +1,28 @@
 #!/bin/bash
+#!/bin/bash
+
+# Colour codes for output
+RED='\033[0;31m' # Red colour
+GREEN='\033[0;32m' # Green colour
+BLUE='\033[0;34m' # Blue colour
+CYAN='\033[0;36m' # Cyan colour
+BIWhite='\033[1;97m' # White
+BWHITE='\033[1;37m'   # Bold White colour
+YELLOW='\033[0;33m' # Yellow colour
+
+# Banner function
+function intro {
+echo -e "${BWHITE} _    _            _    ____"            
+echo -e "${BWHITE}| |  | |          | |  |  _ \           "
+echo -e "${BWHITE}| |__| | __ _  ___| | _| |_) | _____  __"
+echo -e "${BWHITE}|  __  |/ _  |/ __| |/ |  _ < / _ \ \/ /"
+echo -e "${BWHITE}| |  | | (_| | (__|   <| |_) | (_) >  < "
+echo -e "${BWHITE}|_|  |_|\__,_|\___|_|\_\____/ \___/_/\_\ "
+echo -e "${BWHITE}                 -By HacktivistRO"
+}
+
+intro
+echo -e "${YELLOW}Transmuting Linux machines to HackBox since 2021."
 
 # Ensure we are being ran as root
 if [ $(id -u) -ne 0 ]; then
@@ -32,6 +56,7 @@ sudo apt install -y docker.io
 echo "updating and package installing done"
 sleep 3
 clear
+intro
 
 #making tools directory
 mkdir ~/tools
@@ -48,6 +73,7 @@ cd ~/tools/
 echo ".bash_profile ready"
 sleep 3
 clear
+intro
 
 #installing go
 echo "Installing Go Language now!"
@@ -63,20 +89,24 @@ cd ~/tools
 rm -rf go-lang
 sleep 1
 clear
+intro
 go version
 echo "Go Language has been installed successfully now."
 sleep 3
 clear
+intro
 
 #Installing AWSCLI!
 echo "Installing AWSCLI"
 apt install -y awscli
 sleep 1
 clear
+intro
 echo "AWSCLI installed successfully!"
 echo "Don't forget to set up AWS credentials!"
 sleep 3
 clear
+intro
 
 #installing LinkFinder
 echo "Installing LinkFinder"
@@ -88,6 +118,7 @@ cd ~/tools/
 echo "LinkFinder installed successfully"
 sleep 3
 clear
+intro
 
 #installing Sublist3r
 echo "Installing Sublist3r"
@@ -100,6 +131,7 @@ cd ~/tools/
 echo "Sublist3er installed successfully"
 sleep 3
 clear
+intro
 
 #installing The_S3_Bucketeers
 echo "Installing Teh_S3_Bucketeers"
@@ -108,12 +140,14 @@ cd ~/tools/
 echo "Teh_S3_Bucketeers installed successfully"
 sleep 3
 clear
+intro
 
 #installing WPScan
 gem install wpscan
 echo "WPScan installed successfully"
 sleep 3
 clear
+intro
 
 #installing DirSearch
 echo "Installing DirSearch and its requirements"
@@ -124,6 +158,7 @@ cd ~/tools/
 echo "DirSearch installed successfully"
 sleep 3
 clear
+intro
 
 #installing HostileSubBruteForcer
 echo "Installing HostileSubBruteForcer"
@@ -131,6 +166,7 @@ git clone https://github.com/HacktivistRO/HostileSubBruteForcer
 echo "HostileSubBruteForcer installed successfully"
 sleep 3
 clear
+intro
 
 #installing SubSlueth
 cd ~/tools
@@ -142,6 +178,7 @@ bash setup.sh
 echo "Subsleuth installed successfully"
 sleep 3
 clear
+intro
 
 #installing LazyS3
 echo "Installing LazyS3"
@@ -150,6 +187,7 @@ cd ~/tools/
 echo "LazyS3 installed successfully"
 sleep 3
 clear
+intro
 
 #installing SQLMap
 echo "Installing SQLMap"
@@ -158,6 +196,7 @@ cd ~/tools/
 echo "SQLMap installed successfully"
 sleep 3
 clear
+intro
 
 #installing AMass
 echo "Installing Amass"
@@ -173,6 +212,7 @@ rm -rf amass
 echo "Amass installed successfully"
 sleep 3
 clear
+intro
 
 #installing Knock
 echo "Installing Knock"
@@ -184,6 +224,7 @@ echo "Installed Knock.py"
 echo "Make sure you setup VirusTotal API key"
 sleep 3
 clear
+intro
 
 #installing NMap
 echo "Installing NMap"
@@ -191,6 +232,7 @@ sudo apt-get install -y nmap
 echo "NMap installed successfully"
 sleep 3
 clear
+intro
 
 #installing HTTProbe
 echo "Installing HTTProbe"
@@ -204,6 +246,7 @@ rm -rf HTTProbe
 echo "HTTProbe installed successfully"
 sleep 3
 clear
+intro
 
 #Download must-have wordlists
 echo "Downloading Bug Bounty Wordlists from Hacktivist RO's GitHub repository"
@@ -212,6 +255,7 @@ git clone https://github.com/HacktivistRO/Bug-Bounty-Wordlists
 echo "Bug-Bounty-Wordlists downloaded successfully"
 sleep 3
 clear
+intro
 
 #Installing Assetfinder
 echo "Installing AssetFinder"
@@ -223,6 +267,7 @@ chmod +x assetfinder
 sudo mv assetfinder /usr/bin
 sleep 3
 clear
+intro
 
 #installing SubFinder
 echo "Installing SubFinder"
@@ -237,6 +282,7 @@ rm -rf subfinder/
 echo "Subfinder installed successfully"
 sleep 3
 clear
+intro
 
 #Installing GAU
 echo "Installing Get All URLs"
@@ -251,6 +297,7 @@ rm gau
 echo "GAU installed successfully"
 sleep 3
 clear
+intro
 
 #installing QSReplace
 echo "Installing QSReplace"
@@ -267,6 +314,7 @@ go install github.com/tomnomnom/qsreplace@latest
 echo "QSReplace installed successfully"
 sleep 3
 clear
+intro
 
 #installing SudoMy
 echo "Installing SudoMy"
@@ -275,6 +323,7 @@ git clone https://github.com/Screetsec/Sudomy
 echo "SudoMy installed successfully"
 sleep 3
 clear
+intro
 
 #Installing JexBoss
 echo "Installing JexBoss"
@@ -286,8 +335,9 @@ echo "JexBoss installed successfully"
 cd ..
 sleep 3
 clear
+intro
 
-#Installing WhatWeb"
+# Installing WhatWeb
 cd ~/tools
 echo "Installing WhatWeb"
 git clone https://github.com/urbanadventurer/WhatWeb.git
@@ -299,6 +349,7 @@ rm -rf WhatWeb
 echo "WhatWeb installed successfully."
 sleep 3
 clear
+intro
 
 #Installing Halberd (Load Balancer Detector)
 cd ~/tools
@@ -310,6 +361,7 @@ cd ~/tools/
 echo "Halberd installed successfully."
 sleep 3
 clear
+intro
 
 #Installing Cero
 cd ~/tools
@@ -325,6 +377,7 @@ rm -rf cero
 echo "Cero installed successfully."
 sleep 3
 clear
+intro
 
 #Installing CSPRecon
 cd ~/tools
@@ -343,6 +396,7 @@ rm -rf csprecon
 echo "CSPRecon installed successfully."
 sleep 3
 clear
+intro
 
 #Installing Gotator
 cd ~/tools
@@ -360,6 +414,7 @@ cd ~/tools
 rm -rf gotator
 sleep 3
 clear
+intro
 
 #Installing identYwaf
 cd ~/tools
@@ -368,12 +423,14 @@ git clone --depth 1 https://github.com/stamparm/identYwaf.git
 echo "identYwaf installed successfully."
 sleep 3
 clear
+intro
 
 # Removing obsolete and unneccessary packages
 echo "Removing obsolete and unneccessary packages"
 apt -y autoremove
 sleep 3
 clear
+intro
 
 echo "Your "HackBox" is now ready. All the best!"
 echo "For a list of all tools installed, visit here: https://github.com/HacktivistRO/HackBox"
