@@ -6,9 +6,9 @@ This is a BASH script that will transmute your Linux machine into a "HackBox"!
 Following are the things that will be installed by the script
 
 Tools
-- DirSearch
-- LinkFinder
-- Docker
+- [DirSearch](https://github.com/maurosoria/dirsearch)
+- [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
+- [Docker](https://www.docker.com/)
 - Knock.py
 - SubSleuth
 - LazyS3
