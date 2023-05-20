@@ -1,3 +1,6 @@
+
+![HackBox_banner](https://github.com/HacktivistRO/HackBox/assets/49992837/ce4f2b12-412e-48b1-a5af-fbe43d26b8b0)
+
 ## Namaste! 
 This is a BASH script that will transmute your Linux machine into a "HackBox"!
 
