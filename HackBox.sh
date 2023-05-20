@@ -53,9 +53,9 @@ clear
 echo "Installing Go Language now!"
 mkdir go-lang
 cd go-lang
-wget https://go.dev/dl/go1.19.3.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
 rm -rf /usr/local/go
-tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz
+tar -C /usr/local -xzf https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 echo 'export PATH=$PATH:/usr/local/go/bin' >> /root/.bash_profile
 source /root/.bash_profile
