@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 # Colour codes for output
 RED='\033[0;31m' # Red colour
