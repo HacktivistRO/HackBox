@@ -15,12 +15,12 @@ Tools
 - [SubSleuth](https://github.com/HacktivistRO/SubSleuth)
 - [LazyS3](https://github.com/nahamsec/lazys3)
 - [SQLMap](https://github.com/sqlmapproject/sqlmap)
-- Teh_S3_bucketeers
-- WPScan
-- HTTProbe
-- AWSCLI
-- Chromium
-- NMap
+- [Teh_S3_bucketeers](https://github.com/tomdev/teh_s3_bucketeers)
+- [WPScan](https://github.com/wpscanteam/wpscan)
+- [TTProbe](https://github.com/tomnomnom/httprobe)
+- [AWSCLI](https://aws.amazon.com/cli/)
+- [Chromium](https://www.chromium.org/)
+- [NMap](https://nmap.org/)
 - Assetfinder
 - SubFinder
 - Get All URLs (GAU)
