@@ -9,8 +9,8 @@ Tools
 - [DirSearch](https://github.com/maurosoria/dirsearch)
 - [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
 - [Docker](https://www.docker.com/)
-- Knock.py
-- SubSleuth
+- [Knock.py](https://github.com/guelfoweb/knock)
+- [SubSleuth](https://github.com/HacktivistRO/SubSleuth)
 - LazyS3
 - SQLMap
 - Sublist3r
