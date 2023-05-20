@@ -13,9 +13,8 @@ Tools
 - [Docker](https://www.docker.com/)
 - [Knock.py](https://github.com/guelfoweb/knock)
 - [SubSleuth](https://github.com/HacktivistRO/SubSleuth)
-- LazyS3
-- SQLMap
-- Sublist3r
+- [LazyS3](https://github.com/nahamsec/lazys3)
+- [SQLMap](https://github.com/sqlmapproject/sqlmap)
 - Teh_S3_bucketeers
 - WPScan
 - HTTProbe
