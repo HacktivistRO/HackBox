@@ -1,5 +1,5 @@
 ![HackBox_banner](https://github.com/HacktivistRO/HackBox/assets/49992837/a58ab85e-01e4-4f52-ad68-cf1d56728b44)
-
+![](https://komarev.com/ghpvc/?username=HacktivistRO
 ## Namaste! 
 This is a BASH script that will transmute your Linux machine into a "HackBox"!
 
