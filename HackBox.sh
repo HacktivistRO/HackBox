@@ -127,19 +127,6 @@ sleep 3
 clear
 intro
 
-#installing Sublist3r
-echo "Installing Sublist3r"
-git clone https://github.com/aboul3la/Sublist3r.git
-cd Sublist3r*
-echo "Setting up Sublist3r by installing its requirements"
-pip3 install -r requirements.txt
-python3 setup.py install
-cd ~/tools/
-echo "Sublist3er installed successfully"
-sleep 3
-clear
-intro
-
 #installing The_S3_Bucketeers
 echo "Installing Teh_S3_Bucketeers"
 git clone https://github.com/tomdev/teh_s3_bucketeers.git
