@@ -36,8 +36,8 @@ Tools
 
 and..
 
-- [Go Language] ([https://go.dev/])
-- Must have [Wordlists] ([https://github.com/nahamsec/bbht](https://github.com/HacktivistRO/Bug-Bounty-Wordlists))
+- [Go Language](https://go.dev/)
+- Must have [Wordlists](https://github.com/HacktivistRO/Bug-Bounty-Wordlists)
 - My [.bash_profile] [(https://github.com/HacktivistRO/recon_profile/]) for recon automation
 
 For installing
