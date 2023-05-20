@@ -19,6 +19,7 @@ echo -e "${BWHITE}|  __  |/ _  |/ __| |/ |  _ < / _ \ \/ /"
 echo -e "${BWHITE}| |  | | (_| | (__|   <| |_) | (_) >  < "
 echo -e "${BWHITE}|_|  |_|\__,_|\___|_|\_\____/ \___/_/\_\ "
 echo -e "${BWHITE}                 -By HacktivistRO"
+echo -e "${GREEN}"
 }
 
 intro
