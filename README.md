@@ -21,19 +21,19 @@ Tools
 - [AWSCLI](https://aws.amazon.com/cli/)
 - [Chromium](https://www.chromium.org/)
 - [NMap](https://nmap.org/)
-- Assetfinder
-- SubFinder
-- Get All URLs (GAU)
-- QSReplace
-- SudoMy
-- JexBoss
-- WhatWeb
-- Halberd (Load Balancer Detector)
-- Cero
-- CSPRecon
-- IdentYwaf
-- Amass
-- Gotator
+- [Assetfinder](https://github.com/tomnomnom/assetfinder)
+- [SubFinder](https://github.com/projectdiscovery/subfinder)
+- [Get All URLs (GAU)]([https://github.com/projectdiscovery/subfinder](https://github.com/lc/gau))
+- [QSReplace](https://github.com/tomnomnom/qsreplace)
+- [SudoMy](https://github.com/screetsec/Sudomy)
+- [JexBoss](https://github.com/joaomatosf/jexboss)
+- [WhatWeb](https://github.com/urbanadventurer/WhatWeb)
+- [Halberd (Load Balancer Detector)](https://github.com/jmbr/halberd)
+- [Cero](https://github.com/glebarez/cero)
+- [CSPRecon](https://github.com/edoardottt/csprecon)
+- [IdentYwaf](https://github.com/stamparm/identYwaf)
+- [Amass](https://github.com/owasp-amass/amass)
+- [Gotator](https://github.com/Josue87/gotator)
 
 and..
 
