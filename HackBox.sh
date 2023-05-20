@@ -11,6 +11,7 @@ YELLOW='\033[0;33m' # Yellow colour
 
 # Banner function
 function intro {
+clear
 echo -e "${BWHITE} _    _            _    ____"            
 echo -e "${BWHITE}| |  | |          | |  |  _ \           "
 echo -e "${BWHITE}| |__| | __ _  ___| | _| |_) | _____  __"
@@ -34,22 +35,28 @@ echo "Installing updates and neccessry packages now."
 sudo apt -y update
 sudo apt install -y libcurl4-openssl-dev
 sudo apt install -y curl
+intro
 sudo apt install -y libssl-dev
 sudo apt install -y jq
 sudo apt install -y ruby-full
+intro
 sudo apt install -y libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
 sudo apt install -y build-essential libssl-dev libffi-dev python-dev
 sudo apt install -y python-setuptools
+intro
 sudo apt install -y libldns-dev
 sudo apt install -y python-pip
 sudo apt install -y gem
 sudo apt install -y ruby
+intro
 sudo apt install -y ruby-dev
 sudo apt install -y python3-pip
 sudo apt install -y python-dnspython
+intro
 sudo apt install -y git
 sudo apt install -y rename
 sudo apt install -y xargs
+intro
 sudo apt install -y docker.io
 
 echo "updating and package installing done"
