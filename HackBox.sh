@@ -154,6 +154,15 @@ sleep 3
 clear
 intro
 
+#installing ExtFilterBuster
+echo "Installing ExtFilterBuster"
+git clone https://github.com/HacktivistRO/ExtFilterBuster
+cd ~/tools/
+echo "ExtFilterBuster installed successfully"
+sleep 3
+clear
+intro
+
 #installing HostileSubBruteForcer
 echo "Installing HostileSubBruteForcer"
 git clone https://github.com/HacktivistRO/HostileSubBruteForcer
