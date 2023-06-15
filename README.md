@@ -24,7 +24,7 @@ Tools
 - [NMap](https://nmap.org/)
 - [Assetfinder](https://github.com/tomnomnom/assetfinder)
 - [SubFinder](https://github.com/projectdiscovery/subfinder)
-- [Get All URLs (GAU)](https://github.com/projectdiscovery/subfinder](https://github.com/lc/gau)
+- [Get All URLs (GAU)](https://github.com/lc/gau)
 - [QSReplace](https://github.com/tomnomnom/qsreplace)
 - [SudoMy](https://github.com/screetsec/Sudomy)
 - [JexBoss](https://github.com/joaomatosf/jexboss)
