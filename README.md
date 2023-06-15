@@ -15,6 +15,7 @@ Tools
 - [SubSleuth](https://github.com/HacktivistRO/SubSleuth)
 - [LazyS3](https://github.com/nahamsec/lazys3)
 - [SQLMap](https://github.com/sqlmapproject/sqlmap)
+- [ExtFilterBuster](https://github.com/HacktivistRO/ExtFilterBuster)
 - [Teh_S3_bucketeers](https://github.com/tomdev/teh_s3_bucketeers)
 - [WPScan](https://github.com/wpscanteam/wpscan)
 - [TTProbe](https://github.com/tomnomnom/httprobe)
